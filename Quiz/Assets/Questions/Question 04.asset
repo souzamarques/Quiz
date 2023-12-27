@@ -14,3 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: "Em quantos fusos hor\xE1rios est\xE1 dividido o territ\xF3rio da R\xFAssia
     ?"
+  answers:
+  - 8
+  - 9
+  - 10
+  - 11
+  correctAnswerIndex: 3

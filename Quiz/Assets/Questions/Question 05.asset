@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 05
   m_EditorClassIdentifier: 
   question: "Qual \xE9 o maior arquip\xE9lago do mundo ?"
+  answers:
+  - Filipinas
+  - "Jap\xE3o"
+  - "Indon\xE9sia"
+  - "Nova Zel\xE2ndia"
+  correctAnswerIndex: 2

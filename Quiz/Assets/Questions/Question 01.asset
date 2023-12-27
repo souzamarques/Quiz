@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 01
   m_EditorClassIdentifier: 
   question: "Qual \xE9 o pa\xEDs mais populoso do mundo ?"
+  answers:
+  - "\xCDndia"
+  - Estados Unidos
+  - China
+  - "R\xFAssia"
+  correctAnswer: 0

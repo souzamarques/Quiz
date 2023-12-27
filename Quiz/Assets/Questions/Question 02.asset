@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 02
   m_EditorClassIdentifier: 
   question: "Qual \xE9 o maior oceano do mundo ?"
+  answers:
+  - "Oceano Atl\xE2ntico"
+  - "Oceano Pac\xEDfico"
+  - "Oceano \xC1rtico"
+  - "Oceano \xCDndico"
+  correctAnswerIndex: 1

@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 03
   m_EditorClassIdentifier: 
   question: "Qual \xE9 a cordilheira mais longa do mundo ?"
+  answers:
+  - Alpes
+  - Cordilheira dos Andes
+  - Himalaias
+  - Cordilheira do Atlas
+  correctAnswerIndex: 1
