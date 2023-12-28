@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Quiz : MonoBehaviour
@@ -8,6 +9,10 @@ public class Quiz : MonoBehaviour
     [SerializeField] TextMeshProUGUI questionText;
     [SerializeField] QuestionSO question;
     [SerializeField] GameObject[] answerButtons;
+    [SerializeField] Sprite defaultAnswerSprite;
+    [SerializeField] Sprite correctAnswerSprite;
+   
+    int correctAnswerIndex; 
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +23,26 @@ public class Quiz : MonoBehaviour
         {
             TextMeshProUGUI buttonText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();        
             buttonText.text = question.GetAnswer(i);
+        }
+    }
+
+    public void OnAnswerSelected(int index)
+    {
+        Image buttonImage;
+
+        if(index == question.GetCorrectAnswer())
+        {
+            questionText.text = "Correct!";
+            buttonImage = answerButtons[index].GetComponent<Image>();
+            buttonImage.sprite = correctAnswerSprite;
+        }
+        else
+        {
+            correctAnswerIndex = question.GetCorrectAnswer();
+            string correctAnswer = question.GetAnswer(correctAnswerIndex);
+            questionText.text = "You fail! The correct answer was:\n" + correctAnswer;
+            buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
+            buttonImage.sprite = correctAnswerSprite;
         }
     }
 }
